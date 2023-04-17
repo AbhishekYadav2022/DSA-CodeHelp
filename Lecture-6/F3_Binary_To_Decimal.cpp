@@ -7,7 +7,7 @@ int main()
 {
     int num, digit;
     int i = 0, ans = 0;
-    cout << "Enter the number: ";
+    cout << "Enter the binary number: ";
     cin >> num;
     while (num != 0)
     {
