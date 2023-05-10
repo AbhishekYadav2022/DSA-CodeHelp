@@ -18,7 +18,7 @@ int main()
     s.insert(5);
 
     // Printing values
-    for (auto i : s) // Why auto
+    for (auto i : s) // Why auto -> https://www.scaler.com/topics/cpp/auto-in-cpp/
     {
         cout << i << endl;
     }
@@ -49,7 +49,7 @@ int main()
     cout << "5 is present or not -> " << s.count(5) << endl;
     cout << "-5 is present or not -> " << s.count(-5) << endl;
 
-    set<int>::iterator itr = s.find(5);
+    set<int>::iterator itr = s.find(5); // What ? -> https://www.geeksforgeeks.org/different-ways-to-iterate-over-a-set-in-c/
 
     for (auto it = itr; it != s.end(); it++)
     {

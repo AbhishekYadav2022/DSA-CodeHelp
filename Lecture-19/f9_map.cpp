@@ -32,8 +32,8 @@ int main()
     }
 
     // Other -> throwing error -> to understand
-    // auto it = find(5);
-    // for (auto i = it; i != m.end(); i++)
+    // auto itr = m.find(5);
+    // for (auto i = itr; i != m.end(); i++)
     // {
     //     cout << (*i).first << endl;
     // }
