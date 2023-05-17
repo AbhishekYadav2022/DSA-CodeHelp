@@ -1,16 +1,16 @@
-// Insertion Sort
 #include <iostream>
 using namespace std;
 
-void InsertionSort(int arr[], int n)
+void BubbleSort(int arr[], int n)
 {
-    for (int i = 1; i < n; i++)
+    for (int i = 0; i < n - 1; i++)
     {
-        for (int j = i; j < n; j++)
+        int min = i;
+        for (int j = i + 1; j < n; j++)
         {
-            if (arr[j - 1] > arr[j])
+            if (arr[j] < arr[min])
             {
-                swap(arr[n], arr[n - 1]);
+                swap(arr[j], arr[min]);
             }
         }
     }
@@ -27,11 +27,11 @@ void PrintArray(int arr[], int n)
 
 int main()
 {
-    int arr[6] = {11, 76, 54, 13, 95, 21};
-
-    InsertionSort(arr, 6);
-
+    int arr[6] = {2, 4, 1, 5, 7, 3};
     PrintArray(arr, 6);
 
+    BubbleSort(arr, 6);
+
+    PrintArray(arr, 6);
     return 0;
 }
