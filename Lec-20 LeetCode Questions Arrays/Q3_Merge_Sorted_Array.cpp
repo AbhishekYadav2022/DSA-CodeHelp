@@ -58,13 +58,13 @@ int main()
 
     merge(arr1, 5, arr2, 3, arr3);
 
-    cout << "Array 1: ";
+    cout << "Array1 : ";
     print(arr1, 5);
 
-    cout << "Array 2: ";
+    cout << "Array2 : ";
     print(arr2, 3);
 
-    cout << "Array 3: ";
+    cout << "Array3 : ";
     print(arr3, 8);
 
     return 0;
