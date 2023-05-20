@@ -1,0 +1,1 @@
+// Merge two arrays and put all the elements in the first array 
