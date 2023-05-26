@@ -1,30 +1,24 @@
 // Remove All Occurrences of a Substring
 // Problem: https://www.leetcode.com/problems/remove-all-occurences-of-a-substring/
+
 #include <iostream>
 using namespace std;
 
-string removeOccurences(string str)
+string removeOccs(string str, string part)
 {
-    string temp = "";
-
-    for (int i = 0; i < str.length(); i++)
+    while (str.length() != 0 && str.find(part) < str.length())
     {
-        if (str[i] == 'c' && str[i - 1] == 'b' && str[i - 2] == 'a')
-        {
-            temp.pop_back();
-            temp.pop_back();
-        }
-        else
-        {
-            temp.push_back(str[i]);
-        }
+        str.erase(str.find(part), part.length());
     }
-    return temp;
+    return str;
 }
 
 int main()
 {
-    string str = "Thisabcisabcaabcstring";
-    cout << removeSubstr(str);
+    string str = "This is a string";
+
+    string new_str = removeOccs(str, "is");
+
+    cout << new_str;
     return 0;
 }
