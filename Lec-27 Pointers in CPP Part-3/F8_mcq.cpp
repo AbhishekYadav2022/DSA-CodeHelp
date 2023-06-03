@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    //* Question 6
+    float f = 12.5;
+    float p = 21.5;
+    float *ptr = &f;
+    (*ptr)++;
+    *ptr = p;
+    cout << *ptr << " " << f << " " << p << endl;
+
+    return 0;
+}
